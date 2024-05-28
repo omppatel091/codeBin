@@ -1,0 +1,64 @@
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif; /* Ensure consistent font across the container */
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.red-text {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  font-family: 'Arial', sans-serif;
+}
+
+.btn-green,
+.btn-red {
+  width: calc(50% - 5px); /* Adjust width as needed */
+  padding: 10px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px; /* Adjust font size as needed */
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+}
+
+.btn-green {
+  background-color: #2ecc71;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.btn-red {
+  background-color: #e74c3c;
+  color: #fff;
+  margin-left: 10px; /* Add margin-left for spacing between buttons */
+}
+
+.btn-green:disabled, .btn-red:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}

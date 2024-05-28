@@ -1,0 +1,47 @@
+/* Container styling */
+div {
+    margin: 20px auto;
+    padding: 5px;
+    max-width: 1400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Unordered list styling */
+div ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+/* List item styling */
+div ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Last list item - remove border */
+div ul li:last-child {
+    border-bottom: none;
+}
+
+/* "No data" message styling */
+div ul li:first-child {
+    color: #888;
+    font-style: italic;
+}
+
+/* Link styling */
+div ul li a {
+    text-decoration: none;
+    color: #007BFF; /* Bootstrap primary color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Link hover effect */
+div ul li a:hover {
+    color: #0056b3;
+}

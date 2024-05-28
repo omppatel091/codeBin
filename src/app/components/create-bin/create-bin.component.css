@@ -1,0 +1,87 @@
+/* Container styling */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif; /* Ensure consistent font across the container */
+}
+
+/* Header styling */
+.container h4 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+    font-family: 'Arial', sans-serif; /* Ensure consistent font */
+}
+
+/* Input field styling */
+.container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Ensure consistent font */
+}
+
+/* Textarea styling */
+.container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Ensure consistent font */
+    background-color: #6a6a6a;
+    color: #9cdcf1; /* Change text color for better readability */
+}
+
+/* Placeholder text styling */
+.container textarea::placeholder {
+    color: #ccc; /* Lighter color for better contrast */
+}
+
+/* Error message styling */
+.red-text {
+    color: #ff0000; /* Bootstrap danger color */
+    font-size: 14px;
+    margin-top: -3px;
+    display: none; /* Hide by default */
+    font-family: 'Arial', sans-serif; /* Ensure consistent font */
+}
+
+/* Button styling */
+.btn-green {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif; /* Ensure consistent font */
+}
+
+.btn-green:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.btn-green:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+/* Show error message when invalid and touched */
+input.ng-invalid.ng-touched + .red-text,
+textarea.ng-invalid.ng-touched + .red-text {
+    display: block;
+}

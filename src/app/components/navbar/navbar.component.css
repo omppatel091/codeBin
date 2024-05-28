@@ -1,0 +1,101 @@
+/* Apply styles to the navigation bar */
+div {
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #323233;
+    color: #ecf0f1;
+    font-family: 'Arial', sans-serif; /* Ensure consistent font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.logout {
+    color: red;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+
+ul li a.active {
+    font-weight: 700;
+    background-color: #3b3c3c;
+}
+
+ul li a:hover {
+    background-color: #3b3c3c;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .btn {
+    background-color: #3498db;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #2980b9;
+}
+
+.auth-buttons .signup-btn {
+    background-color: #2ecc71;
+}
+
+.auth-buttons .signup-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .auth-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
